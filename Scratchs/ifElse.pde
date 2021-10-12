@@ -32,7 +32,7 @@ class ifElse extends Node {
   
   void action(Cat cat) {
     //Truth = compare.compare();
-    Truth = true;
+    Truth = false;
     this.ifaction(cat);
     if(this.child != null) {
       this.child.action(cat);
@@ -67,7 +67,7 @@ class ifElse extends Node {
 
   
   void checkMouse() {
-    if(mouseX >= posx && mouseX <= posx + 120 && mouseY >= posy && mouseY <= posy + 100) {
+    if(mouseX >= posx && mouseX <= posx + 120 && mouseY >= posy && mouseY <= posy + 20) {
       overBox = true;
       fill(255,190,80);      
     }else {

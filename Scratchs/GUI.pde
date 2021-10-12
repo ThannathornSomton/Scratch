@@ -57,10 +57,7 @@ class GUI {
     text("if",posx+10,posy+15);
     
   }
-
-  
-
-  
+ 
   void itemGrid() {
     stroke(160);
     for(int i = 1; i < 13; i++) {
