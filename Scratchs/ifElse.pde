@@ -4,13 +4,13 @@ class ifElse extends Node {
   boolean Truth;
 
 
-  ifElse() {
+  ifElse(boolean locked) {
     posx = 150;
     posy = 30;
     xOffset = 0;
     yOffset = 0;
-    locked = false;
-    overBox = false;
+    this.locked = locked;
+    overBox = locked;
   }
   
   void addChildTrue(Node args) {

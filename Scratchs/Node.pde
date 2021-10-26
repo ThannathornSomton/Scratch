@@ -1,7 +1,7 @@
 class Node {
   Node child,parent;
   Boolean overBox,locked;
-  int posx,posy,xOffset,yOffset;
+  int posx,posy,xOffset,yOffset,block;
   
   void addChild(Node args) {
     this.child = args;
